@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+}
+.header a{
+    margin-left: 10px;
+
+}
+.header a:visited{
+    color: #8e8c8c;
+}
+.header a:hover{
+    color: white;
+}
