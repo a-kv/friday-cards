@@ -11,10 +11,10 @@ import {Profile} from "../../p2-features/f1-auth/a4-profile/Profile";
 
 
 export const App = () => {
-    const [isHidden, setIsHidden] = useState(true);
+    const [isHidden, setIsHidden] = useState(false);
 
     const handleClick = ():void => {
-        setIsHidden(false);
+        setIsHidden(true);
     }
     return (
         <div className="App">
@@ -26,7 +26,7 @@ export const App = () => {
             <Route path={profile} component={Profile} />
 
             <div className='appText'>
-                {isHidden
+                {!isHidden
                 ? <span>you will remember everything</span>
                 : ''
             }</div>

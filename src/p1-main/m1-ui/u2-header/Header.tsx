@@ -11,7 +11,7 @@ type PropsType = {
 export const Header = (props: PropsType) => {
 
  return <div className={s.header} >
-     <NavLink to={login}>Sing in</NavLink>
-     <NavLink to={registration}>Sing up</NavLink>
+     <NavLink to={login} onClick={props.handleClick}>Sing in</NavLink>
+     <NavLink to={registration} onClick={props.handleClick}>Sing up</NavLink>
  </div>
 }
