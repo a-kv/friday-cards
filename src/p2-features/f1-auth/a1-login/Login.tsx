@@ -4,6 +4,8 @@ import {Input} from "../../../p1-main/m1-ui/u1-common/input/Input";
 import {Button} from "../../../p1-main/m1-ui/u1-common/button/Button";
 import {useSelector} from "react-redux";
 import {AppStateType} from "../../../p1-main/m2-bll/store";
+import {NavLink} from "react-router-dom";
+import {restore} from "../../../p1-main/m1-ui/routes";
 
 
 type PropsType = {
@@ -38,11 +40,9 @@ export const Login = (props: PropsType) => {
                 inputPlaceholder={login.inputPlaceholder[1]}
                 value={login.value}
                 onChange={onChange}
-
-
             />
-            <div className={s.forgetPassword}>Forget password</div>
-            <Button buttonTitle='Log in'/>
+            <NavLink to={restore} className={s.forgetPassword}>Forget password</NavLink>
+            <Button buttonTitle={login.buttonTitle}/>
         </form>
     )
 }

@@ -40,7 +40,7 @@ export const Registration = () => {
                 onChange={onChange}
 
             />
-            <Button buttonTitle='Sing in'/>
+            <Button buttonTitle={reg.buttonTitle}/>
         </form>
     )
 }

@@ -1,6 +1,6 @@
 
 type initialStateType = {
-    buttonName: string
+    buttonTitle: string
     loading: boolean
     inputType: Array<string>
     inputPlaceholder: Array<string>
@@ -9,7 +9,7 @@ type initialStateType = {
 }
 
 const initialState: initialStateType = {
-    buttonName: 'Sing up',
+    buttonTitle: 'Sing up',
     loading: false,
     inputType: ['text', 'password'],
     inputPlaceholder: ['  Name', '  E-mail', '  Password'],
