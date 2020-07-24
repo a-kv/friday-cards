@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8c6196ea019ea6da7136718ab423504",
+    "revision": "e35a34e33caedcb9da6d3eb0f4712d65",
     "url": "/friday-cards/index.html"
   },
   {
-    "revision": "980aa61105db5b2ddc3e",
-    "url": "/friday-cards/static/css/main.7fe9d73d.chunk.css"
+    "revision": "a69e99588e0808ad224e",
+    "url": "/friday-cards/static/css/main.7ec7f414.chunk.css"
   },
   {
     "revision": "c24143d77ccc4c91258b",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/friday-cards/static/js/2.a4a47c0a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "980aa61105db5b2ddc3e",
-    "url": "/friday-cards/static/js/main.9a6b4c3a.chunk.js"
+    "revision": "a69e99588e0808ad224e",
+    "url": "/friday-cards/static/js/main.ee347cec.chunk.js"
   },
   {
     "revision": "493d56ac6b5bcb68cfa5",
