@@ -1,0 +1,42 @@
+.packTable {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    border-collapse: collapse;
+}
+
+.packTable table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.packTable th, td {
+    display: flex;
+    min-width: 25%;
+    justify-content: center;
+    padding: 10px 0;
+    color: #baacac;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 2px;
+}
+
+.packTable th {
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+.links a {
+    margin-left: 5px;
+    color: #baacac;
+}
+
+.packTable img {
+    height: 25px;
+    margin: auto 5px;
+}
+
+.packTable tr {
+    display: flex;
+    width: 100%;
+
+}

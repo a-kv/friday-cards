@@ -1,0 +1,41 @@
+.table{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  border-collapse: collapse;
+  & table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  & th, td {
+    display: flex;
+    min-width: 25%;
+    justify-content: center;
+    padding: 10px 0;
+    color: #020202;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+  & th {
+    background-color: rgb(255, 255, 255);
+  }
+
+  &  a {
+    margin-left: 5px;
+    color: black;
+  }
+
+  &  img {
+    height: 25px;
+    margin: auto 5px;
+  }
+
+  &  tr {
+    display: flex;
+    width: 100%;
+
+  }
+}

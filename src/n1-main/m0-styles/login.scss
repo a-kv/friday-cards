@@ -1,0 +1,28 @@
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+
+  .forgetPassword{
+    font-size: 0.9em;
+    color: #c7c7c7;
+
+  }
+  .errorLogin input{
+    border: solid red 2px;
+  }
+
+  .errorText {
+    color: red;
+  }
+  .formSummaryError {
+    border: red 1px solid;
+    padding: 5px;
+    color: darkred;
+  }
+}
+

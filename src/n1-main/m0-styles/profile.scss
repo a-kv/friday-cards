@@ -1,0 +1,12 @@
+.avatar{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 95%;
+  & img{
+    height: 70px;
+    margin-top: 50px;
+  }
+}

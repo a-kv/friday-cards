@@ -1,0 +1,31 @@
+.header{
+  display: flex;
+  height: 70px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 97%;
+ & a{
+    color: #c7c7c7;
+    margin-left: 10px;
+
+  }
+  & a:visited{
+    color: #8e8c8c;
+  }
+  & a:hover{
+    color: white;
+  }
+
+  .headerMenu{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    justify-content: space-between;
+    .packBtn{
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+
+}
