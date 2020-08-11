@@ -21,9 +21,9 @@ export const Packs = React.memo(() => {
 
     useEffect(
         () => {
-            dispatch(getPacksT(_id))
+            dispatch(getPacksT(_id, currentPage, pageCount))
         },
-        [_id])
+        [_id, currentPage, pageCount])
 
     const deletePack = useCallback(
         (packId) => dispatch(deleteCardsPack(packId)),
@@ -44,7 +44,7 @@ export const Packs = React.memo(() => {
         (e: ChangeEvent<HTMLInputElement>): void => setTitle(e.currentTarget.value), [setTitle]);
 
     const changeCurrentPage = useCallback(
-        (page: number) =>{dispatch(PacksActions.setCurrentPage(page))},
+        (pageNumber: number) =>{dispatch(PacksActions.setCurrentPage(pageNumber))},
         [])
 
 
@@ -64,6 +64,8 @@ export const Packs = React.memo(() => {
                   cardPacks={cardPacks}
             />
             <Pagination
+                activeLinkClass={classes.activePage}
+                innerClass={classes.pagination}
                 itemClass={classes.pages}
                 totalItemsCount={cardPackTotalCount}
                 onChange={changeCurrentPage}

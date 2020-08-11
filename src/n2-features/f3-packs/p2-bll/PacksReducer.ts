@@ -26,7 +26,7 @@ type initialStateType = {
 const initialState: initialStateType = {
     cardPacks: [],
     currentPage: 0,
-    pageCount: 10,
+    pageCount: 9,
     cardPackTotalCount: 0
 }
 
@@ -98,9 +98,9 @@ export const packsReducer = (state: initialStateType = initialState, action: Act
 export type ThunkType = ThunkAction<void, AppStateType, unknown, any>
 export type ThunkDispatchType = ThunkDispatch<AppStateType, {}, any>
 
-export const getPacksT = (userId: string): ThunkType => (dispatch: ThunkDispatchType) => {
+export const getPacksT = (userId: string, page: number, pageCount: number): ThunkType => (dispatch: ThunkDispatchType) => {
     let token = Cookies.get('token')
-    packsAPI.getPacks(userId, token)
+    packsAPI.getPacks(userId, token, page, pageCount)
         .then(res => {
             Cookies.set('token', res.token)
             dispatch(PacksActions.setPacks(res.cardPacks))

@@ -42,12 +42,12 @@ export const Cards = React.memo(() => {
     return (
 
         <div className={classes.main}>
-            <div>CARDS</div>
+            <div className={classes.title}>CARDS</div>
             <Search/>
             <div className={classes.header}>
                 <Input inputType={'text'} onChange={onChangeQuestion} placeholder={'Entry question...'} value={question}/>
                 <Input inputType={'text'} onChange={onChangeAnswer} placeholder={'Entry answer...'} value={answer} />
-                <Button buttonName={'Add new card'} buttonType={'primary'} loading={false} onClick={addCard}
+                <Button buttonName={'Add new card'} buttonType={'mini'} loading={false} onClick={addCard}
                         buttonDisabled={false}/>
             </div>
             <Card deleteCard={deleteCard}/>

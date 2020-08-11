@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from "./Pack.module.css";
 import del from '../../../n0-assets/icons8-delete-50.png';
 import update from '../../../n0-assets/icons8-update-left-rotation-50.png';
@@ -10,7 +10,7 @@ type Props = {
     cardPacks: Array<PackType>
 }
 export const Pack = React.memo(({deletePack, cardPacks, }: Props) => {
-
+    const [isHidden, setIsHidden] = useState(true);
     return (
         <div className={classes.packTable}>
             <table>
@@ -29,7 +29,7 @@ export const Pack = React.memo(({deletePack, cardPacks, }: Props) => {
                     </td>
                     <td className={classes.links}>
                         <NavLink to={`/card/${p._id}`}>Cards </NavLink>
-                        <NavLink to={`/card`}> Learn</NavLink>
+                        <NavLink onClick={() => setIsHidden(false)} to={`/learn/${p._id}`}>Learn</NavLink>
                     </td>
                 </tr>)}
             </table>

@@ -1,0 +1,81 @@
+@mixin cardSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  z-index: 2;
+  color: black;
+  perspective: 1000px;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
+.wrapModal {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  .modalBackground {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px;
+    margin: 50px 0;
+
+    .question {
+      @include cardSide;
+      background-color: #89d9d9;
+      box-shadow: 0 0 15px rgba(253, 252, 252, 0.62);
+
+    }
+
+    .answer {
+      @include cardSide;
+      background-color: #c8d989;
+      box-shadow: 0 0 15px rgba(94, 255, 94, 0.73);
+
+      .ratingBtn {
+        display: flex;
+        justify-content: center;
+
+        & button {
+          margin: 5px;
+        }
+
+      }
+    }
+
+    .answer {
+      transform: rotateY(180deg);
+    }
+
+    &:hover .question {
+      transform: rotateY(180deg);
+    }
+
+    &:hover .answer {
+      transform: rotateY(360deg);
+    }
+  }
+}

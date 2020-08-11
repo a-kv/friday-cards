@@ -3,8 +3,8 @@ import {instance} from "../../../n1-main/m3-dal/api";
 
 export const packsAPI = {
 
-    getPacks(userId: string, token: string | undefined)  {
-        return  instance.get<any>(`cards/pack?token=${token}&user_id=${userId}`)
+    getPacks(userId: string, token: string | undefined, page: number, pageCount: number)  {
+        return  instance.get<any>(`cards/pack?token=${token}&user_id=${userId}&pageCount=${pageCount}&page=${page}`)
             .then(res => {
                 return res.data
             })

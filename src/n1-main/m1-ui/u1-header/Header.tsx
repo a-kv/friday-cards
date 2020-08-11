@@ -1,12 +1,12 @@
 import React from 'react';
 import {NavLink, useHistory} from "react-router-dom";
-import {login, packs, registration, cards} from "../u2-routes/routes";
+import {login, packs, registration} from "../u2-routes/routes";
 import {useDispatch, useSelector} from "react-redux";
 import {AppStateType} from "../../m2-bll/store";
 import {logOut} from '../../../n2-features/f1-auth/a1-login/l2-bll/LoginReducer';
 import Button from "../u3-common/c2-button/Button";
 import '../../m0-styles/header.scss';
-import user from "../../../n0-assets/ninja-background-512.png";
+import user from "../../../n0-assets/samuraii.jpg";
 
 export const Header = () => {
     const dispatch = useDispatch()
@@ -23,8 +23,8 @@ export const Header = () => {
             {loginState.isAuth === false
                 ?
                 <div>
-                    <NavLink to={login}> Sign in </NavLink> |
-                    <NavLink to={registration}> Sign up </NavLink>
+                    <NavLink to={login}>Sign in</NavLink> |
+                    <NavLink to={registration}>Sign up</NavLink>
                 </div>
                 :
                 <div className='headerMenu'>

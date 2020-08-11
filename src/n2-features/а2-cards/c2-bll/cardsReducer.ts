@@ -6,7 +6,6 @@ import Cookies from "js-cookie";
 export type NewCardType = {
     answer: string
     cardsPack_id: string
-    isVisible?: boolean
     created: string
     grade: number
     question: string

@@ -4,6 +4,7 @@
   justify-content: flex-end;
   align-items: center;
   width: 97%;
+
  & a{
     color: #c7c7c7;
     margin-left: 10px;
@@ -24,7 +25,9 @@
     .packBtn{
       display: flex;
       flex-direction: column;
-
+    }
+    .avatar img{
+      border-radius: 55px;
     }
   }
 

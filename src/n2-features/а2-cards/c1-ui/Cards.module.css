@@ -4,9 +4,25 @@
     align-items: center;
     height: 90vh;
     width: 96%;
+    margin-top: 60px;
+}
+.title {
+    display: flex;
+    font-size: 23px;
+    margin: 10px auto;
+
 }
 .header{
     display: flex;
-    align-items: center;
     margin: 10px auto;
+}
+.header button{
+    display: flex;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+.header input{
+    display: flex;
+    margin-top: 0px;
+    margin-left: 6px;
 }

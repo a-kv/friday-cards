@@ -17,12 +17,16 @@
     justify-content: center;
     padding: 10px 0;
     color: #baacac;
-    background-color: rgba(255, 255, 255, 0);
-    margin: 2px;
+    background-color: rgba(252, 249, 249, 0.1);
+    margin: 1px;
+
 }
 
 .packTable th {
-    background-color: rgba(255, 255, 255, 0.09);
+    color: #282c34;
+    background-color: rgba(97, 218, 251, 0.76);
+    box-shadow: 0 0 10px rgba(253, 252, 252, 0.62);
+
 }
 
 .links a {
